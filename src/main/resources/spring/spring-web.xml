@@ -26,6 +26,7 @@
 	 <!-- 3.配置jsp 显示ViewResolver -->
 	 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	 	<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+	 	<!--如果return 的是“index”，那么目标文件 = prefix + “index” + suffix =  /WEB-INF/jsp/index.jsp-->
 	 	<property name="prefix" value="/WEB-INF/jsp/" />
 	 	<property name="suffix" value=".jsp" />
 	 </bean>
